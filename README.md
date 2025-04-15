@@ -10,6 +10,11 @@
 In this project we explore the prediction of win or loss outcomes in [Clash Royale Datasets](https://www.kaggle.com/datasets?search=clash+royale) based on cards played, providing a net score of the combination of card's strengths, their individual strengths, trophies earned, and other features in the dataset.
 
 ## Accuracy by model
+### Accuracy to beat based on PCC
+Since dataset is well balanced PCC is at 0.5 and the accuracy to beat is 1.25 times PCC which is at 62.5%
+
+![](images/PCC.png)
+
 Further in the project we have recognized that the `trophies` feature is a high predictor of winning and we would like to omit this feature by removing it and running another iteration of the models
 
 ### With trophies as feature
@@ -86,6 +91,8 @@ Train acc: 0.9905794446016212
 Test acc: 0.9970660135025449
 ```
 ![with_trophies](images/with_trophies.png)
+
+![](images/svc-decision-bound.png)
 
 ### Without trophies as feature
 ```commandline
